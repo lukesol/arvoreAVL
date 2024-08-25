@@ -203,7 +203,7 @@ class ArvoreBalanceada {
 
     private void preOrdem(Nodo nodo) {
         if (nodo != null) {
-            System.out.print(nodo.reserva.getCodigo() + " ");
+            System.out.println(nodo.reserva.getCodigo() + " ("+nodo.reserva.getNome()+", "+nodo.reserva.getVoo()+", "+nodo.reserva.getData()+") ");
             preOrdem(nodo.esquerda);
             preOrdem(nodo.direita);
         }
